@@ -1,0 +1,6 @@
+production:
+  adapter: mysql2
+  socket: /var/run/mysqld/mysqld.sock
+  database: redmine
+  username: redmine
+  password: redmine
