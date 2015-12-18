@@ -30,7 +30,7 @@ COPY files/db_init.sh /db_init.sh
 
 RUN \
     mkdir -p /redmine.default && \
-    cp -R /redmine/config /redmine/files /redmine/plugins /redmine/repo /redmine/log /redmine.default && \
+    cp -R /redmine/config /redmine/files /redmine/plugins /redmine/log /redmine.default && \
     cd /redmine && \
     gem install bundler && \
     bundle install --without development test && \
